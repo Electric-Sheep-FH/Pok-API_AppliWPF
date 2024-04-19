@@ -1,0 +1,20 @@
+﻿<Window x:Class="TP_PokéAPI_WPFtest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP_PokéAPI_WPFtest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="439" VerticalAlignment="Top" Width="797" Source="/pokemon.jpg" Stretch="UniformToFill"/>
+        <TextBox x:Name="pokemon_TextBox" HorizontalAlignment="Center" Margin="0,83,0,0" TextWrapping="Wrap" Text="Pokemon name here..." VerticalAlignment="Top" Width="138" GotFocus="pokemon_TextBox_GotFocus"/>
+        <Button x:Name="pokemon_Button" Content="Go !" HorizontalAlignment="Left" Margin="488,82,0,0" VerticalAlignment="Top" Click="pokemon_Button_Click"/>
+        <Image x:Name="pokemon_Image" HorizontalAlignment="Left" Height="251" Margin="27,150,0,0" VerticalAlignment="Top" Width="252" RenderTransformOrigin="0.243,0.049"/>
+        <ScrollViewer Margin="331,119,120,13">
+            <TextBlock x:Name="pokemon_result" TextWrapping="Wrap" Text="" Foreground="Black" FontSize="16" FontWeight="Bold" FontFamily="Arial Black" Background="#66FFFFFF"/>
+        </ScrollViewer>
+
+
+    </Grid>
+</Window>
